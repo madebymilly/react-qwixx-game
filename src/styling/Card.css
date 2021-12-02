@@ -1,0 +1,21 @@
+.Card {
+  margin-bottom: 2rem;
+}
+
+.Card__row,
+.Card__row--failed {
+  display: flex;
+  justify-content: space-between;
+}
+
+.Card__row--failed {
+  max-width: 50%;
+  margin-top: 1rem;
+}
+
+.Card__box--failed {
+  border: 1px solid black;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+}
+
