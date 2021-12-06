@@ -1,10 +1,10 @@
 import React, { createContext, useReducer } from 'react';
-import { cardContent } from '../data/cardContent.js';
+import { boxesContent, penaltiesContent } from '../data/cardContent.js';
 import playersReducer from '../reducer/playersReducer.js';
 
 const defaultPlayers = [ // TODO: move to state when StartGameForm component is done.
-  {id: 0, name: 'Milly', boxes: cardContent},
-  {id: 1, name: 'Ruben', boxes: cardContent}
+  {id: 0, name: 'Milly', boxes: boxesContent, penalties: penaltiesContent},
+  {id: 1, name: 'Ruben', boxes: boxesContent, penalties: penaltiesContent}
 ];
 
 export const PlayersContext = createContext();

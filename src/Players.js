@@ -5,6 +5,7 @@ import { PlayersContext } from './context/PlayersContext';
 function Players() {
 
   const players = useContext(PlayersContext);
+  
   return (
     <div className="Players">
       {players.map(player => 

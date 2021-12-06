@@ -3,11 +3,11 @@ import Card from './Card'
 import './styling/Player.css'
 
 function Player(props) {
-  const { id, name, boxes} = props;
+  const { id, name, boxes, penalties} = props;
   return (
     <div className="Player">
       <h3 className="Player__name">{name}</h3>
-      <Card boxes={boxes} playerId={id} />
+      <Card boxes={boxes} penalties={penalties} playerId={id} />
     </div>
   )
 }

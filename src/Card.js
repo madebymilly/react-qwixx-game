@@ -1,16 +1,17 @@
 import React from 'react'
 import Box from './Box';
+import PenaltyBox from './PenaltyBox';
 import './styling/Card.css'; 
 import './styling/Scores.css'; 
 import { scores } from './data/scores'
 
 function Card(props) {
 
-  const { boxes, playerId } = props;
+  const { boxes, penalties, playerId } = props;
 
   const createRows = () => {
     let rows = [];
-    for ( let i = 1; i <= 4; i++ ) {
+    for ( let i = 1; i <= 5; i++ ) {
       rows.push(
         <div key={i} className="Card__row">
           {boxes.filter( box => box.row === i ).map(box => 
@@ -20,6 +21,13 @@ function Card(props) {
       );
     }
     return rows;
+  }
+
+  const createPenaltyRow = () => {
+    const penaltyBoxes = penalties.map(penalty => 
+      <PenaltyBox key={penalty.id} {...penalty} playerId={playerId} />
+    );
+    return <div className="Card__row">{penaltyBoxes}</div>
   }
 
   const getScore = (color) => {
@@ -32,6 +40,7 @@ function Card(props) {
     <>
       <div className="Card">
         {createRows()}
+        {createPenaltyRow()}
         <div className="Scores">
           <div className="Scores--red">Red: {getScore('red')}</div>
           <div className="Scores--yellow">Yellow: {getScore('yellow')}</div>

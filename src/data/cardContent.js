@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 
-export const cardContent = [
+export const boxesContent = [
   {id: uuid(), row: 1, color: 'red', num: 2, clickable: true, checked: false},
   {id: uuid(), row: 1, color: 'red', num: 3, clickable: true, checked: false},
   {id: uuid(), row: 1, color: 'red', num: 4, clickable: true, checked: false},
@@ -49,4 +49,11 @@ export const cardContent = [
   {id: uuid(), row: 4, color: 'blue', num: 3, clickable: true, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 2, clickable: false, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 'lock', clickable: false, checked: false}
+];
+
+export const penaltiesContent = [
+  {id: uuid(), clickable: true, checked: false},
+  {id: uuid(), clickable: true, checked: false},
+  {id: uuid(), clickable: true, checked: false},
+  {id: uuid(), clickable: true, checked: false}
 ];
