@@ -7,7 +7,6 @@
 .Scores--red {
   color: red;
 }
-
 .Scores--yellow {
   color: gold;
 }
@@ -15,7 +14,9 @@
 .Scores--green {
   color: green;
 }
-
 .Scores--blue {
   color: blue;
+}
+.Scores--grey {
+  color: grey;
 }

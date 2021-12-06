@@ -36,16 +36,25 @@ function Card(props) {
     return scores[count];
   }
 
+  const redScore = getScore('red');
+  const yellowScore = getScore('yellow');
+  const greenScore = getScore('green');
+  const blueScore = getScore('blue');
+  const penaltyScore = penalties.filter(box => box.checked === true).length * -5;
+  const totalScore = redScore + yellowScore + greenScore + blueScore + penaltyScore;
+
   return (
     <>
       <div className="Card">
         {createRows()}
         {createPenaltyRow()}
         <div className="Scores">
-          <div className="Scores--red">Red: {getScore('red')}</div>
-          <div className="Scores--yellow">Yellow: {getScore('yellow')}</div>
-          <div className="Scores--green">Green: {getScore('green')}</div>
-          <div className="Scores--blue">Blue: {getScore('blue')}</div>
+          <div className="Scores--red">Red: {redScore}</div>
+          <div className="Scores--yellow">Yellow: {yellowScore}</div>
+          <div className="Scores--green">Green: {greenScore}</div>
+          <div className="Scores--blue">Blue: {blueScore}</div>
+          <div className="Scores--grey">Penalties: {penaltyScore}</div>
+          <div className="Scores--total">TOTAL: {totalScore} </div>
         </div>
       </div>
     </>
