@@ -1,4 +1,4 @@
-import React, { memo } from 'react'
+import React from 'react'
 import Box from './Box';
 import './styling/Card.css'; 
 
@@ -33,4 +33,4 @@ function Card(props) {
   )
 }
 
-export default memo(Card);
+export default Card;

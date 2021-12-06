@@ -1,7 +1,6 @@
-import React, {useContext} from 'react'
-import Card from './Card';
-import { PlayersContext, DispatchContext } from './context/PlayersContext';
-
+import React, { useContext } from 'react';
+import Player from './Player';
+import { PlayersContext } from './context/PlayersContext';
 
 function Players(props) {
 
@@ -10,10 +9,7 @@ function Players(props) {
   return (
     <div className="Players">
       {players.map(player => 
-        <div key={player.id} className="Player">
-          <h3 className="Player__name">{props.name}</h3>
-          <Card boxes={player.boxes} playerId={player.id} />
-      </div>
+        <Player key={player.id} {...player} />
       )}
     </div>
   )

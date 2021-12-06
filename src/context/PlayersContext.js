@@ -1,5 +1,6 @@
-import React, { useState, createContext } from 'react';
+import React, { createContext, useReducer } from 'react';
 import { cardContent } from '../data/cardContent.js';
+import playersReducer from '../reducer/playersReducer.js';
 
 const defaultPlayers = [ // TODO: move to state when StartGameForm component is done.
   {id: 0, name: 'Milly', boxes: cardContent},
@@ -11,20 +12,11 @@ export const DispatchContext = createContext();
 
 export function PlayersProvider(props) {
 
-  const [players, setPlayers] = useState(defaultPlayers);
-
-  const toggleBox = (playerId, boxId) => {
-    console.log(playerId, boxId)
-    let newPlayers = players.map(player => 
-      player.id === playerId ? {...player, boxes: player.boxes.map(box => 
-        box.id === boxId ? {...box, checked: !box.checked } : box
-      )} : player );
-    setPlayers(newPlayers);
-  };
+  const [state, dispatch] = useReducer(playersReducer, defaultPlayers);
   
   return (
-    <PlayersContext.Provider value={players}>
-      <DispatchContext.Provider value={toggleBox}>
+    <PlayersContext.Provider value={state}>
+      <DispatchContext.Provider value={dispatch}>
         {props.children}
       </DispatchContext.Provider>
     </PlayersContext.Provider>
