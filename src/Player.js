@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import Card from './Card'
 import './styling/Player.css'
 
@@ -12,4 +12,4 @@ function Player(props) {
   )
 }
 
-export default Player;
+export default memo(Player);
