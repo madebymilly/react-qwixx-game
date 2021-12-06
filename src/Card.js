@@ -1,6 +1,8 @@
 import React from 'react'
 import Box from './Box';
 import './styling/Card.css'; 
+import './styling/Scores.css'; 
+import { scores } from './data/scores'
 
 function Card(props) {
 
@@ -19,10 +21,23 @@ function Card(props) {
     }
     return rows;
   }
+
+  const getScore = (color) => {
+    let count = 0;
+    count = boxes.filter(box => box.color === color && box.checked === true).length;
+    return scores[count];
+  }
+
   return (
     <>
       <div className="Card">
         {createRows()}
+        <div className="Scores">
+          <div className="Scores--red">Red: {getScore('red')}</div>
+          <div className="Scores--yellow">Yellow: {getScore('yellow')}</div>
+          <div className="Scores--green">Green: {getScore('green')}</div>
+          <div className="Scores--blue">Blue: {getScore('blue')}</div>
+        </div>
       </div>
     </>
   )

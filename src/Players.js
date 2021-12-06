@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import Player from './Player';
 import { PlayersContext } from './context/PlayersContext';
 
-function Players(props) {
+function Players() {
 
   const players = useContext(PlayersContext);
   return (

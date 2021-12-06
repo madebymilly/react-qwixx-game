@@ -1,0 +1,21 @@
+.Scores {
+  text-align: left;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.Scores--red {
+  color: red;
+}
+
+.Scores--yellow {
+  color: gold;
+}
+
+.Scores--green {
+  color: green;
+}
+
+.Scores--blue {
+  color: blue;
+}
