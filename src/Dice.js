@@ -5,6 +5,7 @@ import Die from './Die';
 import './styling/Dice.css';
 
 function Dice(props) {
+  console.log('render dice')
   return (
     <div className="Dice">
       <div className="Dice-dice">
