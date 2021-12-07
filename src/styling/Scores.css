@@ -10,7 +10,6 @@
 .Scores--yellow {
   color: gold;
 }
-
 .Scores--green {
   color: green;
 }
@@ -19,4 +18,8 @@
 }
 .Scores--grey {
   color: grey;
+  float: right;
+}
+.Scores--total {
+  float: right;
 }

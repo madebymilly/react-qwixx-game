@@ -1,11 +1,10 @@
 .Card {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .Card__row,
 .Card__row--failed {
   display: flex;
-  /*justify-content: space-between;*/
 }
 
 .Card__row--failed {

@@ -9,8 +9,9 @@ Functional React components, hooks, context, reducers, memo.
 ## To do:
 
 - XX Show scores per color & total score
-- throw dice
+- XX throw dice
 - check if clickable based on dice
+- switch player turn
 - Check if box is clickable based on prev checked
 - add localStorage
 

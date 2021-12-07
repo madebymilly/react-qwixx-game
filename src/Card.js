@@ -50,11 +50,11 @@ function Card(props) {
         {createPenaltyRow()}
         <div className="Scores">
           <div className="Scores--red">Red: {redScore}</div>
+          <div className="Scores--grey">Penalties: {penaltyScore}</div>
           <div className="Scores--yellow">Yellow: {yellowScore}</div>
+          <div className="Scores--total">TOTAL: {totalScore} </div>
           <div className="Scores--green">Green: {greenScore}</div>
           <div className="Scores--blue">Blue: {blueScore}</div>
-          <div className="Scores--grey">Penalties: {penaltyScore}</div>
-          <div className="Scores--total">TOTAL: {totalScore} </div>
         </div>
       </div>
     </>
