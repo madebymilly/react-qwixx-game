@@ -10,9 +10,10 @@ Functional React components, hooks, context, reducers, memo.
 
 - XX Show scores per color & total score
 - XX throw dice
-- check if clickable based on dice
+- XX add context for dice (no need for reducer & memo)
 - switch player turn
-- Check if box is clickable based on prev checked
+- make last box clickable when: at least 5 boxes checked in same row.
+- make 'lock' clickable when: last item is checked.
 - add localStorage
 
 
