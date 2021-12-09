@@ -11,6 +11,19 @@ html {
   padding: 1rem;
 }
 
-.App h1 {
+.h1 {
   margin-bottom: 2rem;
+}
+
+.Primary-button {
+  border: 0;
+  background: gold;
+  color: black;
+  margin: 40px auto 80px;
+  width: 200px;
+  height: 40px;
+  padding: 0 20px;
+  line-height: 40px;
+  border-radius: 5px;
+  cursor: pointer;
 }

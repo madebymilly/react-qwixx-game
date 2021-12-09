@@ -1,10 +1,16 @@
 import Qwixx from './Qwixx'
 import './styling/App.css';
+import { PlayersProvider } from './context/PlayersContext';
+import { DiceProvider } from './context/DiceContext';
 
 function App() {
   return (
     <div className="App">
-      <Qwixx />
+      <PlayersProvider>
+        <DiceProvider>
+          <Qwixx />
+        </DiceProvider>
+      </PlayersProvider>
     </div>
   );
 }
