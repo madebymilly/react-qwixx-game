@@ -1,10 +1,15 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import Player from './Player';
-import { PlayersContext } from './context/PlayersContext';
+import { DispatchContext, PlayersContext } from './context/PlayersContext';
 
-function Players() {
+function Players(props) {
 
   const players = useContext(PlayersContext);
+  const dispatch = useContext(DispatchContext);
+
+  useEffect(() => {
+    dispatch({type: 'SET_PLAYERS', num: props.numOfPlayers});
+  }, [props.gameStarted]);
   
   return (
     <div className="Players">

@@ -14,7 +14,7 @@ function Dice(props) {
           <Die key={i} color={diceColor} num={dice[i]} shake={isRolling} />
         )}
       </div>
-      <button className="Dice-button" onClick={rollDice}>Roll Dice</button>
+      <button className="Primary-button" onClick={rollDice}>Roll Dice</button>
     </div>
   )
 }
