@@ -5,4 +5,13 @@
 
 .Player__name {
   margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.Player .Editform input {
+  font-size: 1rem;
+  margin: 0 0.5em 1em 0;
+  border-radius: 5px;
+  border: 1px solid green;
+  padding: 4px 10px;
 }

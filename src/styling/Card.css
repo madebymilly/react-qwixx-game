@@ -7,9 +7,9 @@
   display: flex;
 }
 
-.Card__row--failed {
-  max-width: 50%;
-  margin-top: 1rem;
+.Card__row--penalties span {
+  line-height: 2rem;
+  padding-left: 0.5rem;
 }
 
 .Card__box--failed {

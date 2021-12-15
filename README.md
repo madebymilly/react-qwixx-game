@@ -11,8 +11,8 @@ Functional React components, hooks, context, reducers, memo.
 - XX Show scores per color & total score
 - XX throw dice
 - XX add context for dice (no need for reducer & memo)
-- XX add StartForm
-- let players change their name
+- XX add StartForm 
+- XX let player change it's name
 - add reusable hook for toggle state
 - add reusable hook for input state
 - switch player turn

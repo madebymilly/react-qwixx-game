@@ -1,12 +1,15 @@
 .Die {
   flex-basis: 100px;
-}
+} 
 .Die i {
   color: lightgrey;
-  font-size: 80px;
+  font-size: 4rem;
 }
 .Die-white i {
   color: lightgrey !important;
+}
+.Die-yellow i {
+	color: gold !important;
 }
 .shake {
 	animation: shake 0.5s infinite;

@@ -27,7 +27,7 @@ function Card(props) {
     const penaltyBoxes = penalties.map(penalty => 
       <PenaltyBox key={penalty.id} {...penalty} playerId={playerId} />
     );
-    return <div className="Card__row">{penaltyBoxes}</div>
+    return <div className="Card__row Card__row--penalties">{penaltyBoxes} <span>(penalties)</span></div>
   }
 
   const getScore = (color) => {

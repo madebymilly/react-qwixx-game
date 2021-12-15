@@ -11,8 +11,8 @@ export const boxesContent = [
   {id: uuid(), row: 1, color: 'red', num: 9, clickable: true, checked: false},
   {id: uuid(), row: 1, color: 'red', num: 10, clickable: true, checked: false},
   {id: uuid(), row: 1, color: 'red', num: 11, clickable: true, checked: false},
-  {id: uuid(), row: 1, color: 'red', num: 12, clickable: false, checked: false},
-  {id: uuid(), row: 1, color: 'red', num: 'lock', clickable: false, checked: false},
+  {id: uuid(), row: 1, color: 'red', num: 12, clickable: true, checked: false},
+  {id: uuid(), row: 1, color: 'red', num: 'lock', clickable: true, checked: false},
   {id: uuid(), row: 2, color: 'yellow', num: 2, clickable: true, checked: false},
   {id: uuid(), row: 2, color: 'yellow', num: 3, clickable: true, checked: false},
   {id: uuid(), row: 2, color: 'yellow', num: 4, clickable: true, checked: false},
@@ -23,8 +23,8 @@ export const boxesContent = [
   {id: uuid(), row: 2, color: 'yellow', num: 9, clickable: true, checked: false},
   {id: uuid(), row: 2, color: 'yellow', num: 10, clickable: true, checked: false},
   {id: uuid(), row: 2, color: 'yellow', num: 11, clickable: true, checked: false},
-  {id: uuid(), row: 2, color: 'yellow', num: 12, clickable: false, checked: false},
-  {id: uuid(), row: 2, color: 'red', num: 'lock', clickable: false, checked: false},
+  {id: uuid(), row: 2, color: 'yellow', num: 12, clickable: true, checked: false},
+  {id: uuid(), row: 2, color: 'red', num: 'lock', clickable: true, checked: false},
   {id: uuid(), row: 3, color: 'green', num: 12, clickable: true, checked: false},
   {id: uuid(), row: 3, color: 'green', num: 11, clickable: true, checked: false},
   {id: uuid(), row: 3, color: 'green', num: 10, clickable: true, checked: false},
@@ -35,8 +35,8 @@ export const boxesContent = [
   {id: uuid(), row: 3, color: 'green', num: 5, clickable: true, checked: false},
   {id: uuid(), row: 3, color: 'green', num: 4, clickable: true, checked: false},
   {id: uuid(), row: 3, color: 'green', num: 3, clickable: true, checked: false},
-  {id: uuid(), row: 3, color: 'green', num: 2, clickable: false, checked: false},
-  {id: uuid(), row: 3, color: 'green', num: 'lock', clickable: false, checked: false},
+  {id: uuid(), row: 3, color: 'green', num: 2, clickable: true, checked: false},
+  {id: uuid(), row: 3, color: 'green', num: 'lock', clickable: true, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 12, clickable: true, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 11, clickable: true, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 10, clickable: true, checked: false},
@@ -47,8 +47,8 @@ export const boxesContent = [
   {id: uuid(), row: 4, color: 'blue', num: 5, clickable: true, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 4, clickable: true, checked: false},
   {id: uuid(), row: 4, color: 'blue', num: 3, clickable: true, checked: false},
-  {id: uuid(), row: 4, color: 'blue', num: 2, clickable: false, checked: false},
-  {id: uuid(), row: 4, color: 'blue', num: 'lock', clickable: false, checked: false}
+  {id: uuid(), row: 4, color: 'blue', num: 2, clickable: true, checked: false},
+  {id: uuid(), row: 4, color: 'blue', num: 'lock', clickable: true, checked: false}
 ];
 
 export const penaltiesContent = [

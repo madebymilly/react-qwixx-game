@@ -1,37 +1,37 @@
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import Dice from './Dice'
 import Players from './Players'
-import StartGameForm from './StartGameForm';
-import { DispatchContext } from './context/PlayersContext';
-// import { PlayersProvider } from './context/PlayersContext';
-// import { DiceProvider } from './context/DiceContext';
+import StartGameForm from './startGameForm';
+import { PlayersProvider } from './context/PlayersContext';
+import { DiceProvider } from './context/DiceContext';
 
 const diceColors = ['white', 'white', 'red', 'yellow', 'green', 'blue'];
 const diceFaces = [ 'one', 'two', 'three', 'four', 'five', 'six' ];
 
 function Qwixx() {
 
-  const dispatch = useContext(DispatchContext);
-
   const [gameStarted, setGameStarted] = useState(false);
+  const [numOfPlayers, setNumOfPlayers] = useState(2);
 
-  const startGame = (numberOfPlayers) => {
+  const startGame = (num) => {
     setGameStarted(true);
-    dispatch({type: 'SET_PLAYERS', num: numberOfPlayers})
+    setNumOfPlayers(num);
   }
 
   return (
     <>
       <h1>A Game of Qwixx</h1>
       {!gameStarted 
-      ? <StartGameForm startGame={startGame} />
-      : <>
-          <Dice 
-            colors={diceColors} 
-            faces={diceFaces} 
-          />
-          <Players />
-        </>
+        ? <StartGameForm startGame={startGame} />
+        : <PlayersProvider>
+            <DiceProvider>
+              <Dice 
+                colors={diceColors} 
+                faces={diceFaces} 
+              />
+              <Players gameStarted={gameStarted} numOfPlayers={numOfPlayers} />
+            </DiceProvider>
+          </PlayersProvider>
       }
     </>
   )
