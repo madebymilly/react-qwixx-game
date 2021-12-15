@@ -8,6 +8,9 @@ function playersReducer(state, action) {
         players = [...players, {id: i, name: `Player` + i, boxes: boxesContent, penalties: penaltiesContent}]
       }
       return players;
+    case 'CHANGE_PLAYER_NAME':
+      return state.map(player => 
+        player.id === action.playerId ? {...player, name: action.name} : player );
     case 'TOGGLE_BOX':
       return state.map(player => 
         player.id === action.playerId ? {...player, boxes: player.boxes.map(box => 
