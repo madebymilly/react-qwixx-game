@@ -10,8 +10,16 @@ function Box(props) {
       dispatch({type: 'TOGGLE_BOX', playerId: playerId, boxId: id});
     }
   }
+
+  const getContent = () => {
+    if (num === 'lock') {
+      return <i className="fas fa-lock"></i>
+    }
+    return num;
+  }
+
   return (
-    <div className={`Box Box--${num} Box--${color} ${checked && 'is-checked'}`} onClick={handleClick}>{num}</div>
+    <div className={`Box Box--${num} Box--${color} ${checked && 'is-checked'}`} onClick={handleClick}>{getContent()}</div>
   )
 }
 

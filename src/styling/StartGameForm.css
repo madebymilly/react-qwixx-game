@@ -1,24 +1,24 @@
 .StartGameForm {
   padding: 1rem 0rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .StartGameForm-input {
-  width: 30rem; 
-  display: flex;
-  justify-content: space-between;
+  width: 13rem; 
   margin: 0 auto 1rem;
 }
 
 .StartGameForm-input label {
-  flex-basis: 50%;
   display: block;
-  text-align: left;
+  text-align: center;
   line-height: 2rem;
 }
 
 .StartGameForm-input input {
-  flex-basis: 50%;
   display: block;
   line-height: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0.5rem;
 }
