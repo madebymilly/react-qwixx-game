@@ -22,6 +22,7 @@ Some choices may feel a little superfluous, but I added them anyway because of l
 - switch player turn
 - make last box clickable when: at least 5 boxes checked in same row.
 - make 'lock' clickable when: last item is checked.
+- make all boxes in row unclickable if row is locked
 - end game when two rows are closed or one player has 4 penalties.
 
 

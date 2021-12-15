@@ -1,15 +1,19 @@
-import React, { createContext, useReducer } from 'react';
+import React, { createContext } from 'react';
 import playersReducer from '../reducer/playersReducer.js';
+import { useLocalStorageReducer } from '../hooks/useLocalStorageReducer.js';
 
 export const PlayersContext = createContext();
 export const DispatchContext = createContext();
 
 export function PlayersProvider(props) {
 
-  const [state, dispatch] = useReducer(playersReducer, []);
+  //const [state, dispatch] = useReducer(playersReducer, []);
+  const [players, dispatch] = useLocalStorageReducer('players', [], playersReducer);
+
+  console.log(players);
   
   return (
-    <PlayersContext.Provider value={state}>
+    <PlayersContext.Provider value={players}>
       <DispatchContext.Provider value={dispatch}>
         {props.children}
       </DispatchContext.Provider>
