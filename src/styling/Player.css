@@ -6,6 +6,7 @@
 .Player__name {
   margin-bottom: 1rem;
   cursor: pointer;
+  color: darkslategrey;
 }
 
 .Player .Editform input {
