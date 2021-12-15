@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-qwixx-game/static/css/main.9e554cd6.chunk.css",
+    "main.css": "/react-qwixx-game/static/css/main.2adda46c.chunk.css",
     "main.js": "/react-qwixx-game/static/js/main.156a2063.chunk.js",
     "main.js.map": "/react-qwixx-game/static/js/main.156a2063.chunk.js.map",
     "runtime-main.js": "/react-qwixx-game/static/js/runtime-main.04abcee6.js",
@@ -8,13 +8,13 @@
     "static/js/2.25cdbdc0.chunk.js": "/react-qwixx-game/static/js/2.25cdbdc0.chunk.js",
     "static/js/2.25cdbdc0.chunk.js.map": "/react-qwixx-game/static/js/2.25cdbdc0.chunk.js.map",
     "index.html": "/react-qwixx-game/index.html",
-    "static/css/main.9e554cd6.chunk.css.map": "/react-qwixx-game/static/css/main.9e554cd6.chunk.css.map",
+    "static/css/main.2adda46c.chunk.css.map": "/react-qwixx-game/static/css/main.2adda46c.chunk.css.map",
     "static/js/2.25cdbdc0.chunk.js.LICENSE.txt": "/react-qwixx-game/static/js/2.25cdbdc0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.04abcee6.js",
     "static/js/2.25cdbdc0.chunk.js",
-    "static/css/main.9e554cd6.chunk.css",
+    "static/css/main.2adda46c.chunk.css",
     "static/js/main.156a2063.chunk.js"
   ]
 }
