@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Dice from './Dice'
 import Players from './Players'
 import StartGameForm from './StartGameForm';
@@ -11,12 +11,11 @@ const diceFaces = [ 'one', 'two', 'three', 'four', 'five', 'six' ];
 
 function Qwixx() {
 
-  //const [numOfPlayers, setNumOfPlayers] = useState(2);
+  // const [numOfPlayers, setNumOfPlayers] = useState(2);
   const [numOfPlayers, setNumOfPlayers] = useLocalStorageState('numOfPlayers', 2);
-  //const [gameStarted, setGameStarted] = useState(false);
+  // const [gameStarted, setGameStarted] = useState(false);
   const [gameStarted, setGameStarted] = useLocalStorageState('gameStarted', false);
   
-
   const startGame = (num) => {
     setGameStarted(true);
     setNumOfPlayers(num);
@@ -25,7 +24,7 @@ function Qwixx() {
   return (
     <>
       <h1>A Game of Qwixx</h1>
-      {!gameStarted 
+      {!gameStarted
         ? <StartGameForm startGame={startGame} />
         : <PlayersProvider>
             <DiceProvider>

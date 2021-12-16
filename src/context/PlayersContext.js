@@ -9,8 +9,6 @@ export function PlayersProvider(props) {
 
   //const [state, dispatch] = useReducer(playersReducer, []);
   const [players, dispatch] = useLocalStorageReducer('players', [], playersReducer);
-
-  console.log(players);
   
   return (
     <PlayersContext.Provider value={players}>

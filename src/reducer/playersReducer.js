@@ -3,11 +3,14 @@ import { boxesContent, penaltiesContent } from '../data/cardContent.js';
 function playersReducer(state, action) {
   switch(action.type) {
     case 'SET_PLAYERS':
-      let players = [];
-      for (let i = 1; i <= action.num; i++) {
-        players = [...players, {id: i, name: `Player` + i, boxes: boxesContent, penalties: penaltiesContent}]
+      if (state.length <= 0) {
+        let players = [];
+        for (let i = 1; i <= action.num; i++) {
+          players = [...players, {id: i, name: `Player` + i, boxes: boxesContent, penalties: penaltiesContent}]
+        }
+        return players;
       }
-      return players;
+      return state;
     case 'CHANGE_PLAYER_NAME':
       return state.map(player => 
         player.id === action.playerId ? {...player, name: action.name} : player );
